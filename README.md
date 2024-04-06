@@ -1,4 +1,4 @@
-## MAT 1500 PROJECT ONE 
+## MAT 1500 PROJECT TWO
 Built and deployed static HTML/CSS/JS Page to display math behind car purchase. 
 
 The page contains no copyrightable material references. 
