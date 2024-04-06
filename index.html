@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hill, Joshua, MAT 1500, Project Two</title>
+  <style>
+/* Page Settings */ 
+body {
+  width: 100%;
+  margin: 0;
+  color: yellow;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Velvet_2.jpg/450px-Velvet_2.jpg?20220205055433");
+  image-rendering: auto;
+  background-size: cover; 
+  text-align: center;
+}
+
+#top {
+  margin: 0;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Playing_cards_maze.JPG/640px-Playing_cards_maze.JPG");
+  opacity: .79;
+  background-size: cover; 
+  color: black;
+  border-top: 15px solid rgb(114, 27, 143);;
+  border-bottom: 15px solid rgb(114, 27, 143);
+}
+#top:hover  {
+  color: white;
+  opacity: .99;
+}
+
+#footer {
+  padding: 15px;
+  margin-top: 20px;
+  border-top: 15px solid rgb(114, 27, 143);
+  border-bottom: 15px solid rgb(114, 27, 143);
+  background-color: bisque;
+}
+
+#ref{
+  font-size: 9px;
+}
+#ref:hover{
+  font-size: 12px;
+}
+/*Match Szie of image to HTML */ 
+.card {
+  height: 400px;
+  width: 250px;
+  border-radius: 25%;
+}
+.insideCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 25%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+/* Rotate Card*/ 
+}
+.card:hover .insideCard {
+  transform: rotateY(180deg);
+}
+.backCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 4.45%;
+  backface-visibility: hidden;
+}
+.frontCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+/* Insert Details for text*/ 
+.backCard {
+  background-color: #eff1f3;
+  color: black;
+  transform: rotateY(180deg);
+  overflow: scroll;
+}
+/* Flex Constainer */ 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 5px;
+}
+
+.container p, i {
+  margin: 2px;
+  text-align: left;
+  font-size: 11px;
+}
+</style>
+  </head>
+    <header>
+      <section id="top">
+        <h3>Is a car loan a gamble?</h3>
+          <h3>Is signing an agreement to pay interest creating a house of cards?</h3>
+          <h3>Don't worry! By understanding how loans and interest are applied, the odds move in your favor. </h3>
+        <h3>Flip each card and discover how we apply these equations in a real-world situation</h>
+      </section>
+    </header>
+  <body>
+<h2>Introduction</h2>
+  <div class="container"><!--I An Introduction: -->
+    <div class="card">
+      <div class="insideCard">
+        <div class="frontCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+        </div>
+        <div class="backCard">
+          <i>Introduction</i><br>
+            <p>As a newly sworn-in U.S. citizen, I thought I would go all out - and get a Truck.</p><br>
+              <p>And when I say Truck, I mean a proper, American, totally unnecessary truck:</p>
+              <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/KidRockSilverado.png?raw=true" height="200" width="230" alt="KidRockSilverado">
+            <p>I began my search online to find the perfect vehicle.</p>
+          <span id="ref"><a href="https://www.thedrive.com/new-cars/787/kid-rocks-chevy-silverado-concept-is-more-american-than-heart-disease">Image Source</a><br></span>
+        </div>
+      </div>
+    </div>
+  <div class="card">
+  <div class="insideCard">
+    <div class="frontCard">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+    </div>
+      <div class="backCard">
+        <i>Introduction</i><br>
+          <p>After reviewing my options, I settled on the perfect truck: a Chevy Silverado.</p><br>
+            <p>This car meets all my specifications for an efficient, easy to drive, low maintenance, and low profile vehicle I can occasionally use in the city.</p><br>
+              <p>My initial research showed a Chevy dealer not too far from me in Queens, called <a href="https://www.drivesunrisechevy.com/new/Chevrolet/2024-Chevrolet-Silverado+1500-Queens+NY-b712217e0a0e084c73d221de33300588.htm">Sunrise Chevy</a>, 
+            so I went and checked it out.</p><br>
+          <p>This dealership had several 2024 Chevy Silverados for sale, so I started the process of looking for the Silverado I needed.</p>    
+      </div>
+  </div>
+</div>
+  <div class="card">
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+    <div class="backCard">
+      <i>Introduction</i><br>
+        <p> Here is a quick snapshot of the car <a href="https://www.drivesunrisechevy.com/new/Chevrolet/2024-Chevrolet-Silverado+1500-Queens+NY-b712217e0a0e084c73d221de33300588.htm">from the site:</a></p>
+        <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/Silverado.png?raw=true" width="230" height="275" alt="silverado">
+      <p>As you can see, this truck is perfect for living in the most dense city in the country: a 4WD; gets 18 miles per gallon; and with a sticker price of $52,530</p>
+    </div>
+    </div>
+  </div>
+</div><!--DIV SECTION CLOSE-->
+<br><h2>Trade In & Purchase Price</h2>
+  <div class="container"><!--PURCHASE and TRADE-->
+    <div class="card">
+      <div class="insideCard">
+        <div class="frontCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+        </div>
+          <div class="backCard ">
+            <i>Trade In & Purchase Price</i><br>
+              <p> I don't own a car; however, I'm sure my mother-in-law in Los Angeles won't need hers, so I'll trade in her 2019 Lexus RX 350. 
+                <br>She owns the car outright meaning no loan transfers, and only has 22,000 miles on it.</p><br>
+                  <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/LexusRX.png?raw=true" height="150" width="220" alt="Lexus RX">
+                <p>Once the dealership confirms a trade-in price, we can start working out our financial details.</p>
+              <span id="ref"><a href="https://www.kbb.com/lexus/rx/2019/">Image Source</a><br></span>          
+          </div>
+      </div>
+    </div>
+  <div class="card">
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+    <div class="backCard">
+      <i>Trade In & Purchase Price</i><br>
+        <p>According to <a href="https://www.drivesunrisechevy.com/">Sunrise Chevy</a>, the dealership will offer me a trade-in of <strong>$32,721</strong> 
+          for this car in the condition that it is in. </p> 
+        <br><img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/CarValue.png?raw=true" height="235" width="235" alt="CarValue">
+    </div>
+  </div>
+</div>
+  <div class="card"><!--TRADE IN ONE-->
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+        <div class="backCard">
+          <br><i>Trade In & Purchase Price</i>
+            <p> If the dealership is offering us $32,721 for trade-in, that means I need to reevaluate the total cost.</p>
+              <p>Total Cost = 52,530-32,721.<br>
+                Total cost = $19,809</p>
+                  <P> I also need to apply Sales Tax which, in NYC, can be rather steep. 
+                    <a href="https://www.avalara.com/taxrates/en/state-rates/new-york/cities/queens.html">Sales Tax in Queens County is 8.88%.</a>Therefore:
+                      <br> Payment = Total Cost + Sales Tax;
+                      <br> Payment = 19,809 + (19,809 * 0.0888)
+                    <br> Payment = $21,568.04 </P>
+                  <p>So, after the trade-in is applied and Sales Tax is added, I will owe $21,568.04 for the total purchase price. </p>
+                <p>However, this is not the total amount I need to be financed.</p>
+              <p>Remember, <strong>Deposit</strong>=15% of Purchase Price. Therefore:</p>
+            <p><strong>Deposit</strong> is 21,568.04*0.15 = $3,235.21</p>
+          <p><strong>Loan Amount</strong> is 21,568.04-3,235.21 which is $18,332.83</p>      
+        </div>
+    </div>
+  </div>
+</div><!--DIV SECTION CLOSE-->
+<br><h2>Loan and Interest Specifics</h2>
+  <div class="container"><!--Loan-->
+    <div class="card">
+      <div class="insideCard">
+        <div class="frontCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+        </div>
+      <div class="backCard">
+        <br><i>Loan and Interest Specifics</i>
+          <p>Now I need to work out loan duration. I like a 5-year, or 60-Month loan. It's a nice round number, and enough time to upgrade when needed. Next is interest. 
+            While <a href="https://www.drivesunrisechevy.com/">Sunrise Chevy</a> does offer direct financing ay 8.6% for this downpayment:</p>
+          <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/sunriseAPR2.png?raw=true" height="205" width="185" alt="local Sunrise APR">
+        <p>It would be best to verify we're getting the best interest rate for the loan. </p>
+      </div>
+    </div>
+  </div>
+<div class="card"><!--FINACNING -->
+  <div class="insideCard">
+    <div class="frontCard">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+    </div>
+  <div class="backCard">
+    <br><i>Loan and Interest Specifics</i>
+      <p> Auto loans are difficult to speculate as the APR(annual interest) is tied to both the car and the buyer's credit rating.
+        To get past this, I can aggregate the APR from <a href="https://www.caranddriver.com/auto-loans/a31280000/average-apr-for-car-loan/">Car And Driver:</a></p><br>
+      <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/CarAndDriver2.png?raw=true" height="250" width="250" alt="CarDriver APR"></p>
+    </div>
+  </div>
+</div>
+  <div class="card"><!--FINACNING -->
+    <div class="insideCard">
+      <div class="frontCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+    <div class="backCard"><br>
+      <i>Loan and Interest Specifics</i>
+        <p>And from <a href="https://www.nerdwallet.com/article/loans/auto-loans/average-car-loan-interest-rates-by-credit-score">Nerdwallet:</a></p><br>
+      <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/NerdWalletAPR.png?raw=true" height="250" width="250" alt="Nerdwallet"></p>
+    </div>
+  </div>
+</div>
+<div class="card"><!--FINACNING -->
+  <div class="insideCard">
+    <div class="frontCard">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+    </div>
+      <div class="backCard">    
+        <br><i>Loan and Interest Specifics</i>
+          <p>Therefore, I can clarify that the APR for an auto-loan for someone with my credit (730) will be:</p>
+            <p>Approximatly 7% through a bank;</p>   
+            <p>8.6% through the Dealership;</p>
+          <p>And at minimum 9.99% from <a href="https://fiona.com/partner/usa-today-bridge/loans">a quick online lender:</a></p> 
+        <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/CreditLend.png?raw=true" height="200" width="240" alt="credit"><br>
+    </div>
+  </div>
+</div>
+</div>
+  <br><h2>Calculations</h2>
+<div class="container"><!--Calculations-->
+  <div class="card">
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+    <div class="backCard">
+      <br><i>Calculations</i>
+        <p>Now that I have the PRICE, APR, and DURATION, I can calculate the loan specifics for all three and review how much I am paying.</p><br>
+          <p>The <strong>Loan Formula</strong> is as follows: </p>
+            <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/loanFormula.png?raw=true" height="90" width="200" alt="Loan"><br>
+          <p>Whereas N= the number of repayments yearly; R= the interest rate or APR; T= the Time in Years of the loan; P= the principal amount borrowed; and PMT= the payment being calculated. </p>
+        <span id="ref">Image Source: Week 6 Examples</span>
+      </div>
+    </div>
+  </div>
+<div class="card">
+  <div class="insideCard">
+    <div class="frontCard">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+    </div>
+  <div class="backCard">
+    <i>Calculations</i><br>
+      <p>If I enter the approximate bank rate of 7% to the loan formula for 60 months (5 years) at ,onthly repayments:</p>
+        <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/bankCalc3.png?raw=true" height="180" width="175" alt="calc">
+          <p>The monthly payment will be $363.01 at this interest rate.</p> 
+            <p>At this payment rate, throughout the loan, I will pay:
+          <p>363.01 * 12 * 5 = 21,780.6. 
+        <p>The total amount paid back will be $21,780.6.
+      </p>
+    </div>
+  </div>
+</div>
+  <div class="card">
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+    <div class="backCard">
+      <i>Calculations</i>
+        <p>Moving on, if we use the dealer financing rate of 8.6% in the loan formula for 60 months at monthly repayments I calculate:</p>
+          <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/DealerCalc2.png?raw=true" height="180" width="175" alt="calc">
+            <p>The monthly payment will be $377 at this interest rate.</p> 
+          <p>At this payment rate, throughout the loan, I will pay:
+        <p>377.01 * 12 * 5 = 22620.6.
+      <p>The total amount paid back will be $22,620.6.
+    </div>
+  </div>
+</div>
+  <div class="card">
+    <div class="insideCard">
+      <div class="frontCard">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+      </div>
+      <div class="backCard">
+        <i>Calculations</i>
+          <p>Lastly using the online approved lending rate of 9.99% and the same loan formula of 5 years at monthly repayments I calculate:</p>
+            <img src="https://github.com/JoshuaMhill/MAT-1500-Project-Two/blob/main/imagesFolder/CreditCalc2.png?raw=true" height="180" width="175" alt="calc">
+              <p>The monthly payment will be $388.60 at this interest rate.</p> 
+              <p>At this payment rate, throughout the loan, I will pay:
+            <p>389.43 * 12 * 5 = 23365.8. 
+        <p>The total amount paid back will be $23,365.8.
+      </div>
+    </div>
+  </div>
+</div><!--DIV SECTION CLOSE-->
+<h2>Conclusion</h2>
+  <div class="container"><!--CONCLUSION -->
+    <div class="card">
+      <div class="insideCard">
+        <div class="frontCard">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+        </div>
+      <div class="backCard">
+        <i>Conclusion</i>
+          <p> It is clear from the calculations that, if I can get the average APR from a bank for my credit score, that would be the best option. 
+            If I can, I will pay a total of <strong>$21,780</strong> total back to the bank. 
+              <br>As the original price for the car was <strong>$18,332.83</strong>, I will pay (21,780.6 -18,332.83) or <strong>$3,447.77</strong> total interest.</p><br>
+              <p> If I need to finance through the dealership, I will pay <strong>$22,620.6</strong> to the dealership. 
+            <br>The loan amount is still <strong>$18,332.83</strong>, meaning I will pay (22,620.6-18,332.83) or <strong>$4,287.77</strong> total interest. </p><br>
+          <p> If I have to finance through an online lender, I will pay <strong>$23,316</strong> to the lender. 
+        <br>The principle is the same at <strong>$18,332.83</strong>, so I will pay (23,365.8-18,332.83) or <strong>$5032.97</strong> total interest. </p></div>
+      </div>
+    </div>
+  <div class="card">
+<div class="insideCard">
+  <div class="frontCard">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Tiled_blue_broken_line_rhombus_card_back.svg/640px-Tiled_blue_broken_line_rhombus_card_back.svg.png" height="400" width="250" alt="front">
+  </div>
+<div class="backCard">
+  <i>Conclusion</i>
+    <p>Now the cards have been revealed! I hope this helps simplify a process that is often considered a risk!</p><br>
+      <br><p>Additional Notes:</p>
+        <span id="ref"><a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card">The CSS Card Flip Tutorial is here </a></span>
+      <br><span id="ref">Back of the card image from <a href="https://commons.wikimedia.org/wiki/File:Tiled_blue_broken_line_rhombus_card_back.svg">HFWMan</a>, CC0, via Wikimedia Commons</span>
+    <br><span id="ref">Header image from <a href="https://commons.wikimedia.org/wiki/File:Playing_cards_maze.JPG">Covetrick</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</span>
+  <br><span id="ref">Background Image from <a href="https://commons.wikimedia.org/wiki/File:Velvet_2.jpg">933RishavGupta</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</span>
+<br><span id="ref">Sunrise Chevy Trucks are <a href="https://www.drivesunrisechevy.com/new-chevy/trucks-queens-ny.htm">here</a>, in the event that the truck listed is sold. 
+</div>
+  </div>
+</div>
+  </div><!--DIV SECTION CLOSE-->
+<section id="footer">
+  <a href="#top">Top of Page</a><br>
+    <button onclick="details()">Disclaimer</button><br>
+  <a href="mailto:hilljm02@sunyjcc.edu">Contact Me!</a><br>
+</section>
+<!--JS For Page-->
+    <script> 
+// Function For Button
+    function details() {
+        alert(
+        "The creation and publication of this page was not mandated by any SUNY Jamestown Staff and the ownership is solely with the Student who created it. This page is not representative or specifically endorsed by Jamestown Community College. The views and opinions expressed are those of the student only and only intended for educational purposes. For further information, please utilize the 'contact me' on this page.")
+    };
+//
+    </script>
+  </body>
+</html>
