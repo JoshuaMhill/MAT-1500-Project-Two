@@ -1,5 +1,5 @@
 ## MAT 1500 PROJECT ONE 
-Built and deployed static HTML/CSS/JS Page to display math behind car purchache. 
+Built and deployed static HTML/CSS/JS Page to display math behind car purchase. 
 
 The page contains no copyrightable material references. 
 
